@@ -3,7 +3,7 @@ class Api::ProductsController < ApplicationController
     @products = Product
       .all
       .page(params[:page])
-      .per(100)
+      .per(Product::PER_PAGE)
   end
 
   def show
@@ -23,19 +23,30 @@ class Api::ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
     if @product.update(product_params)
+#       puts @test.inspect
       render :show
     else
       # TODO: fixme
       render json: { error_messages: ["something wrong"] }, status: 500
     end
   end
+  
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    render :show
+  end
+  
+  def autocomplete
+    @products = Product.autocomplete(params[:term])
+#    render json: @communities.map{ |community| { label: community.name, id: community.id } }
+  end
 
   private
 
   def product_params
-    ActionController::Parameters
-      .new(JSON.parse(request.body.read))
-      .require(:product)
-      .permit(Product::PERMITTED_ATTRIBUTES)
+#     @test = ActionController::Parameters
+#       .new(JSON.parse(request.body.read))
+    params.require(:product).permit(Product::PERMITTED_ATTRIBUTES)
   end
 end

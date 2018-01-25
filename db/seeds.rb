@@ -1,5 +1,7 @@
-Product.delete_all
+# Product.delete_all
 
-0.upto(20).each do |i|
-  Product.new(name: "テスト部品#{i}", price: i * 1000).save!
-end
+# 0.upto(20).each do |i|
+#   Product.new(name: "テスト部品#{i}", price: i * 1000).save!
+# end
+
+User.create(email: 'user@example.com', nickname: 'UOne', name: 'User One', password: "monkey67")

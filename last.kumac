@@ -1,0 +1,8 @@
+*** Begin of history file: Mon Jan 22 19:20:45 2018
+curl -v -X "POST" "http://localhost:3000/auth/sign_in" \
+     -H "Content-Type: application/json; charset=utf-8" \
+     -d $'{
+  "email": "user@example.com",
+  "password": "monkey67"
+exit
+*** End   of history file: Mon Jan 22 19:22:10 2018

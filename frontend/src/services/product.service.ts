@@ -1,5 +1,6 @@
-import {Injectable} from 'angular2/core';
-import {HTTP_PROVIDERS, Http, Request, Response} from 'angular2/http';
+import {Injectable} from '@angular/core';
+//import {HTTP_PROVIDERS, Http, Request, Response, Headers, RequestOptions} from '@angular/http';
+import {Http, Request, Response, Headers, RequestOptions} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import {Product} from '../models';
 
@@ -31,14 +32,25 @@ export class ProductService {
   }
 
   create(product: Product) {
+    // ... Set content type to JSON
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers }); // Create a request option
     let param: { product: Product } = { 'product': product };
     return this._http
-      .post('/api/products/', JSON.stringify(param));
+      .post('/api/products/', JSON.stringify(param), options);
   }
 
   update(id: string, product: Product) {
+    // ... Set content type to JSON
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers }); // Create a request option
     let param: { product: Product } = { 'product': product };
     return this._http
-      .put('/api/products/' + id, JSON.stringify(param));
+      .put('/api/products/' + id, JSON.stringify(param), options);
+  }
+
+  deleteProduct(product: Product) {
+    return this._http
+        .delete('/api/products/' + product.id);
   }
 }

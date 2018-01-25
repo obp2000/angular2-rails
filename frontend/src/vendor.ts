@@ -4,12 +4,16 @@
 
 import 'es6-shim';
 import 'es6-promise';
-// (these modules are what is in 'angular2/bundles/angular2-polyfills' so don't use that here)
-import 'es7-reflect-metadata/dist/browser';
-import 'zone.js/lib/browser/zone-microtask';
+
+import 'core-js/es6';
+import 'core-js/es7/reflect';
+require('zone.js/dist/zone');
+// (these modules are what is in '@angular/bundles/angular2-polyfills' so don't use that here)
+//import 'es7-reflect-metadata/dist/browser';
+//import 'zone.js/lib/browser/zone-microtask';
 
 // in Production you may want to remove this
-import 'zone.js/lib/browser/long-stack-trace-zone';
+//import 'zone.js/lib/browser/long-stack-trace-zone';
 
 (<any>global).__extends = (this && this.__extends) || function (d?: any, b?: any) {
   for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -47,11 +51,15 @@ import 'zone.js/lib/browser/long-stack-trace-zone';
 //*********************
 
 // Angular 2
-import 'angular2/platform/browser';
-import 'angular2/platform/common_dom';
-import 'angular2/core';
-import 'angular2/router';
-import 'angular2/http';
+import '@angular/platform-browser-dynamic';
+import '@angular/platform-browser';
+import '@angular/common';
+import '@angular/core';
+import '@angular/router';
+import '@angular/http';
+import '@angular/forms';
 
 // RxJS
 import 'rxjs';
+//import 'ng2-auto-complete';
+

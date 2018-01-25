@@ -6,11 +6,15 @@
 var path = require('path');
 var webpack = require('webpack');
 
+// var ExtractTextPlugin = require('extract-text-webpack-plugin');
+// var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 var AssetsPlugin = require('assets-webpack-plugin');
 var assetsPluginInstance = new AssetsPlugin({path: path.join(__dirname, 'frontend')});
 
 // Webpack Plugins
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
+var LoaderOptionsPlugin = webpack.LoaderOptionsPlugin;
 
 /*
  * Config
@@ -18,13 +22,15 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 module.exports = {
   // for faster builds use 'eval'
   devtool: 'source-map',
-  debug: true, // remove in production
+//  debug: true, // remove in production
 
   entry: {
+//     'polyfills': '.frontend/src/polyfills.ts',
     'vendor': './frontend/src/vendor.ts',
-    'app': './frontend/src/bootstrap.ts' // our angular app
+    'app': './frontend/src/bootstrap.ts', // our angular app
+//    'app': './frontend/src/app.module.ts', // our angular app
   },
-
+  
   // Config for our build files
   output: {
     path: path.join(__dirname, "public", "wassets"),
@@ -35,13 +41,12 @@ module.exports = {
   },
 
   resolve: {
-    // ensure loader extensions match
-    extensions: ['','.ts','.js','.json', '.css', '.html']
+	// ensure loader extensions match
+	extensions: ['.ts','.js','.json', '.css', '.html']
   },
 
   module: {
-    preLoaders: [ { test: /\.ts$/, loader: 'tslint-loader' } ],
-    loaders: [
+    rules: [ { test: /\.ts$/, enforce: 'pre', loader: 'tslint-loader' },
       // Support for .ts files.
       {
         test: /\.ts$/,
@@ -66,36 +71,48 @@ module.exports = {
       // ngtemplate-loader
       {test: /\.html$/, loader: 'file-loader' }
     ],
-    noParse: [ /.+zone\.js\/dist\/.+/, /.+angular2\/bundles\/.+/ ]
+    noParse: [ /.+zone\.js\/dist\/.+/, /.+@angular\/bundles\/.+/ ]
   },
 
   plugins: [
     new CommonsChunkPlugin({ name: 'vendor', filename: 'vendor_[hash].bundle.js', minChunks: Infinity }),
-    new CommonsChunkPlugin({ name: 'common', filename: 'common_[hash].bundle.js', minChunks: 2, chunks: ['app', 'vendor'] }),
-    assetsPluginInstance
+    new CommonsChunkPlugin({ name: 'common', filename: 'common_[hash].bundle.js', chunks: ['app', 'vendor'] }),
+    assetsPluginInstance,
    // include uglify in production
-  ],
+    new LoaderOptionsPlugin({
+      debug: true
+//      options: {
+//          tslint: {
+//              emitErrors: false,
+//              failOnHint: false
+//          },
+//          watchOptions: {
+//          poll: 1000
+//          }
+//      }
+  })]
+};
 
   // Other module loader config
-  tslint: {
-    emitErrors: false,
-    failOnHint: false
-  },
+//  tslint: {
+//    emitErrors: false,
+//    failOnHint: false
+//  },
 
   // for vagrant
-  watchOptions: {
-    poll: 1000
-  }
-};
+//  watchOptions: {
+//    poll: 1000
+//  }
+//};
 
 // Helper functions
 
-function root(args) {
-  args = Array.prototype.slice.call(arguments, 0);
-  return path.join.apply(path, [__dirname].concat(args));
-}
-
-function rootNode(args) {
-  args = Array.prototype.slice.call(arguments, 0);
-  return root.apply(path, ['node_modules'].concat(args));
-}
+//function root(args) {
+//  args = Array.prototype.slice.call(arguments, 0);
+//  return path.join.apply(path, [__dirname].concat(args));
+//}
+//
+//function rootNode(args) {
+//  args = Array.prototype.slice.call(arguments, 0);
+//  return root.apply(path, ['node_modules'].concat(args));
+//}

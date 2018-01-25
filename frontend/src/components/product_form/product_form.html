@@ -5,16 +5,58 @@
   </div>
 </div>
 <div class="form-group">
-  <label class="col-xs-2 control-label">Name</label>
+  <label class="col-xs-2 control-label">Название</label>
   <div class="col-xs-10">
     <input type="text" class="form-control"
     [(ngModel)]="product.name" [ngFormControl]="form.controls['name']">
   </div>
 </div>
 <div class="form-group">
-  <label class="col-xs-2 control-label">Price</label>
+  <label class="col-xs-2 control-label">Вес</label>
   <div class="col-xs-10">
     <input type="text" class="form-control"
-    [(ngModel)]="product.price" [ngFormControl]="form.controls['price']">
+    [(ngModel)]="product.weight" [ngFormControl]="form.controls['weight']">
   </div>
 </div>
+<div class="form-group">
+  <label class="col-xs-2 control-label">Ширина, см</label>
+  <div class="col-xs-10">
+    <input type="text" class="form-control"
+    [(ngModel)]="product.width" [ngFormControl]="form.controls['width']">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-xs-2 control-label">Плотность</label>
+  <div class="col-xs-10">
+    <input type="text" class="form-control"
+    [(ngModel)]="product.density" [ngFormControl]="form.controls['density']">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-xs-2 control-label">Цена, $</label>
+  <div class="col-xs-10">
+    <input type="text" class="form-control"
+    [(ngModel)]="product.dollar_price" [ngFormControl]="form.controls['dollar_price']">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-xs-2 control-label">Курс $</label>
+  <div class="col-xs-10">
+    <input type="text" class="form-control"
+    [(ngModel)]="product.dollar_rate" [ngFormControl]="form.controls['dollar_rate']">
+  </div>
+</div>
+<div class="form-group" *ngIf="product.dollar_price && product.dollar_rate && product.density && product.width">
+  <label class="col-xs-2 control-label">Себестоимость, руб./м</label>
+  <div class="col-xs-10">
+	{{product.price_rub_m()}}
+  </div>
+</div>
+<div class="form-group" *ngIf="product.weight && product.density && product.width">
+  <label class="col-xs-2 control-label">Метров</label>
+  <div class="col-xs-10">
+	{{product.meters()}}
+  </div>
+</div>
+
+

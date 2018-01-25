@@ -1,0 +1,1878 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  time:
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      short: "%d.%m.%Y | %H:%M"
+      long: "%d.%m.%Y | %H:%M:%S"
+      custom1: ! "%d %B в %H:%M"
+      custom2: ! "%d.%m.%Yг. в %H:%M"
+      custom3: ! "Сегодня в %H:%M"
+      custom4: ! "%d.%m.%Y"
+      time: ! "%H:%M"
+    am: "утра"
+    pm: "вечера"
+  date:
+    abbr_day_names:
+    - Вс
+    - Пн
+    - Вт
+    - Ср
+    - Чт
+    - Пт
+    - Сб
+    abbr_month_names:
+    -
+    - янв.
+    - февр.
+    - марта
+    - апр.
+    - мая
+    - июня
+    - июля
+    - авг.
+    - сент.
+    - окт.
+    - нояб.
+    - дек.
+    day_names:
+    - воскресенье
+    - понедельник
+    - вторник
+    - среда
+    - четверг
+    - пятница
+    - суббота
+    formats:
+      default: ! '%d.%m.%Y'
+      long: ! '%d %B %Yг.'
+      short: ! '%d %b'
+    month_names:
+    -
+    - января
+    - февраля
+    - марта
+    - апреля
+    - мая
+    - июня
+    - июля
+    - августа
+    - сентября
+    - октября
+    - ноября
+    - декабря
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: около %{count} часов
+        many: около %{count} часов
+        one: около %{count} часа
+        other: около %{count} часа
+      about_x_months:
+        few: около %{count} месяцев
+        many: около %{count} месяцев
+        one: около %{count} месяца
+        other: около %{count} месяца
+      about_x_years:
+        few: около %{count} лет
+        many: около %{count} лет
+        one: около %{count} года
+        other: около %{count} лет
+      almost_x_years:
+        one: почти 1 год
+        few: почти %{count} года
+        many: почти %{count} лет
+        other: почти %{count} лет
+      half_a_minute: меньше минуты
+      less_than_x_minutes:
+        few: меньше %{count} минут
+        many: меньше %{count} минут
+        one: меньше %{count} минуты
+        other: меньше %{count} минуты
+      less_than_x_seconds:
+        few: меньше %{count} секунд
+        many: меньше %{count} секунд
+        one: меньше %{count} секунды
+        other: меньше %{count} секунды
+      over_x_years:
+        few: больше %{count} лет
+        many: больше %{count} лет
+        one: больше %{count} года
+        other: больше %{count} лет
+      x_days:
+        few: ! '%{count} дня'
+        many: ! '%{count} дней'
+        one: ! '%{count} день'
+        other: ! '%{count} дня'
+      x_minutes:
+        few: ! '%{count} минуты'
+        many: ! '%{count} минут'
+        one: ! '%{count} минуту'
+        other: ! '%{count} минуты'
+      x_months:
+        few: ! '%{count} месяца'
+        many: ! '%{count} месяцев'
+        one: ! '%{count} месяц'
+        other: ! '%{count} месяца'
+      x_seconds:
+        few: ! '%{count} секунды'
+        many: ! '%{count} секунд'
+        one: ! '%{count} секунда'
+        other: ! '%{count} секунды'
+    prompts:
+      day: День
+      hour: Часов
+      minute: Минут
+      month: Месяц
+      second: Секунд
+      year: Год
+
+  number:
+    format:
+      separator: "."
+      delimiter: " "
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+    currency:
+      format:
+        format: "%n %u"
+        unit: "руб."
+        separator: "."
+        delimiter: " "
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+  helpers:
+    submit:
+      comment:
+        create: Отправить
+        update: Обновить
+      setting:
+        create: Создать
+        update: Обновить
+      user:
+        create: Сохранить
+        update: Сохранить
+      note:
+        create: Опубликовать
+        update: Сохранить
+      users_instant_messenger:
+        create: Создать
+        update: Сохранить
+      family_member:
+        create: Создать
+        update: Сохранить
+      users_language:
+        create: Создать
+        update: Сохранить
+      notes_community:
+        create: Создать
+        update: Сохранить
+      community:
+        create: Создать
+        update: Сохранить
+      photo_album:
+        create: Создать
+        update: Обновить
+      feedback:
+        create: Отправить
+        update: Обновить
+      message:
+        create: Отправить
+        update: Обновить
+      company:
+        create: Создать
+        update: Обновить
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " и "
+      last_word_connector: " и "
+
+  will_paginate:
+    previous_label: "<"
+    next_label: ">"
+    page_gap: "..."
+
+  social:
+    my_profile: Мой профиль
+    new_messages: Новые сообщения
+    in_social_networks: Мы в социальных сетях
+    show_only_from_communities: "Показывать только из сообществ:"
+    select_all: Выбрать все
+    deselect_all: Убрать все
+    show_main_only: Показать только главные сообщества
+    new_on_temmy: Новое на Teammy
+    from_friends: У друзей
+    in_communities: В сообществах
+    about: О сообществе
+    all_communities: Все сообщества
+    choose_communities: Выбрать сообщества
+    confirm: Подтвердить
+    hide_settings: Скрыть настройки
+    answer_to: Ответ на
+    to_note: заметку
+    hot_note: Горячая заметка
+    comments_size: Количество комментариев
+    back: " назад"
+    new: Новое
+    in_community: в сообществе
+    page: "Страница:"
+    note: Заметка
+    last_comment: последний комментарий
+    communities_size:
+      zero: Нет дочерних сообществ
+      one: 1 сообщеcтво
+      few: "%{count} сообщества"
+      many: "%{count} сообществ"
+      other: "%{count} сообществ"
+    themes_size:
+      zero: нет тем
+      one: 1 тем
+      few: "%{count} темы"
+      many: "%{count} сообщества"
+      other: "%{count} тем"
+
+  application_title: Teammy.com
+  submiting_comment: Комментарий отправляется...
+  add_comment: Добавить комментарий
+  new_key: Новый параметр настройки
+  new_value: Новое значение настройки
+  delete_setting?: Удалить параметр?
+  delete_comment?: Удалить комментарий?
+  delete_photo?: Вы уверены, что хотите удалить фотофотографию?
+  delete_note?: Удалить заметку?
+  delete_reply?: Удалить ответ на заметку?
+  delete_message?: Удалить сообщение?
+  delete_photo_album?: Удалить фотоальбом?
+  edit_note: Редактировать заметку
+  delete: Удалить
+  recaptcha_message: Проверочный код неверен!
+  unknown_uri_message: Формат uri должен быть comments/page_id
+  On_query: По запросу
+  comments_not_found: комментарии не найдены
+  search_comments: Поиск комментариев
+  Search: Искать
+  captcha_for_guest: Капча для гостей
+  premoderation_for_guest: Премодерация для гостей
+  captcha_for_authorized: Капча для зарегистрированных пользователей
+  premoderation_for_authorized: Премодерация для зарегистрированных пользователей
+  edit: Ред.
+  cancel: Отменить
+  edit_comment: Редактировать комментарий
+  delete_comment: Удалить комментарий
+  delete_community: Удалить сообщество
+  approve: Одобрить комментарий
+  checked: Проверен
+  unchecked: Не проверен
+  rss_comments_for_this_page: RSS лента комментариев этой записи
+  rss_messages_for_this_community: RSS лента сообщений этого сообщества
+  Please_select: Пожалуйста, выберите...
+  male: Мужской
+  female: Женский
+  not_defined: Не указано
+  not_uploaded: Не загружены
+  Common_info: Общая информация
+  Family: Семья
+  Personal_info: Личные сведения
+  Photos: Фотографии
+  Contact_info: Контактная информация
+  My_notes: Мои заметки%{count}
+  My_photos: Мои фото%{count}
+  Private_messages: Личные сообщения%{count}
+  private_messages_with_unread_count: "Личные сообщения <span>(%{count} новых)</span>"
+  All: всем
+  Friends: друзьям
+  Draft: мне
+  short_All: Все
+  short_Friends: Друзья
+  short_Draft: Только я
+  preview: Предварительный просмотр
+  note_updated_successfully: Заметка удачно обновлена
+  notes_updated_successfully: Заметки удачно обновлены
+  note_created_successfully: Заметка создана
+  note_deleted_successfully: Заметка удалена
+  note_not_found: Заметка не найдена
+  users_instant_messenger_created_successfully: Псевдоним создан
+  users_instant_messenger_updated_successfully: Псевдоним удачно обновлён
+  users_instant_messenger_deleted_successfully: Псевдоним удалён
+  family_member_created_successfully: Член семьи создан
+  family_member_updated_successfully: Член семьи удачно обновлён
+  family_member_deleted_successfully: Член семьи удалён
+  user_updated_successfully: Удачно обновлено
+  edit_users_instant_messenger: Изменить псевдоним
+  delete_users_instant_messenger?: Удалить псевдоним?
+  edit_family_member: Изменить члена семьи
+  delete_family_member?: Удалить члена семьи?
+  edit_users_language: Изменить язык
+  delete_users_language?: Удалить язык?
+  users_language_created_successfully: Язык создан
+  users_language_updated_successfully: Язык удачно обновлён
+  users_language_deleted_successfully: Язык удалён
+  edit_name: Поменять имя
+  Root: Суперадмин
+  Developer: Разработчик
+  Reader: Читатель
+  Admin: Админ
+  Banned: Заблокированный
+  NotConfirmed: Неактивированный
+  Guest: Незарегистрированный
+  Writer: Писатель
+  My_settings: Мои настройки
+  Privacy_settings: Кто может видеть этот профиль
+  Enter: Войти
+  Exit: Выйти
+  Create_note_settings: Настройки заметок
+  please_login_or_register: Пожалуйста, войдите или зарегистрируйтесь на сайте!
+  male: Мужской
+  female: Женский
+  simple: Простая
+  extended: Расширенная
+  Avatar: Фото
+  Profile: Профиль
+  edit_notes_community: Изменить метку
+  delete_notes_community?: Удалить метку?
+  notes_community_created_successfully: Метка создана
+  notes_community_updated_successfully: Метка удачно обновлена
+  notes_community_deleted_successfully: Метка удалена
+  reply: Ответить
+  reply_created_successfully: Ответ создан
+  show: Показать
+  hide: Скрыть
+  My_discussions: Мои дискуссии%{count}
+  notice_for_private_discussion: В приватной дискуссии могут участвовать только Ваши друзья
+  notice_for_public_discussion: Внимание! Публичную дискуссию нельзя будет изменить на приватную!
+  Official: Официальное
+  Custom: Пользовательское
+  add_tag: Добавить еще метку
+  add_parent_community: Добавить родительское сообщество
+  add_community: Добавить сообщество
+  show_more: Показать ещё
+  show_all_replies: Раскрыть все ответы
+  hide_all_replies: Свернуть ответы
+  show_notes_trees: Раскрыть все ответы
+  hide_notes_trees: Свернуть ответы
+  read_more_in: Читайте продолжение в
+  continue_read: Читайте продолжение ...
+  user_discussions: дискуссиях пользователя
+  quote: Цитировать
+  discussion: Дискуссия
+  replies_to_note: Ответы на заметку
+  expand_children: Раскрыть только первые ответы
+  hide_children: Свернуть ответы
+  Please_define_note_title: Пожалуйста, укажите заголовок дискуссии
+  define_note_title: Укажите заголовок дискуссии!
+  replies: ответов
+  can_not_turn_to_private_discussion: Публичную дискуссию нельзя сделать приватной. Пожалуйста, создайте новую приватную дискуссию.
+  orphan: Сирота
+  belongs_to_communities: Принадлежит к сообществам/разделам
+  has_communities: Вложенные сообщества
+  show_themes: Показать темы
+  hide_themes: Скрыть темы
+  communities_list: Список сообществ
+  category: Раздел
+  categories: Разделы
+  show_message: Показать текст сообщения
+  hide_message: Скрыть текст сообщения
+  reply_to: Ответ на
+  tag: "Метка: "
+  tags: Метки
+  image_title: Всплывающая подсказка
+  avatar_title: Заголовок для фото
+  join_to_community: Вступить в сообщество
+  leave_community: Покинуть сообщество
+  community_members: Участники
+  community_members_full: Участники сообщества
+  Please_select_parent_community: Выберите родительское сообщество
+  successfully_joined_to_community: Вы успешно присоединились к сообществу
+  already_belongs_to_community: Вы уже состоите в сообществе
+  successfully_left_community: Вы покинули сообщество
+  not_belongs_to_community: Вы не состоите в сообществе
+  choose_parent_community_for: Выберите родительское сообщество для
+  member_of_communities: Состоит в сообществах
+  can_moderate: Может модерировать
+  themes_amount: тем
+  themes_amount_full: Количество тем
+  comments_amount: комментариев
+  descendants_titles_and_announcements: Анонсы и заголовки вложенных сообществ
+  titles_and_announcements: Анонсы и заголовки сообществ
+  last_messages: Последние сообщения
+  last_themes: Последние темы
+  rss: RSS
+  find: Найти
+  find_communities: Найти сообщества
+  deleted_successfully: Успешно удалены
+  deleted_successfully_one: Успешно удалено
+  not_found: Не найдены
+  delete_all: Удалить все
+  show_child_communities: Показать вложенные сообщества
+  hide_child_communities: Скрыть вложенные сообщества
+  absent: Отсутствуют
+  moderators: Модераторы
+  themes_list: Список тем
+  visibility_for_all_profile_is_set_to: Видимость для всего профиля установлена в
+  visibility_for_all_photos_is_set_to: Видимость для всех фотографий установлена в
+  visibility_for_friends_is_set_to: Видимость для друзей установлена в
+  selected_communities_remembered: Выделенные сообщества запомнены
+  remembered_communities_cleared: Запомненные сообщества очищены
+  filter_themes_on_community: Отфильтровать темы по сообществу
+  select_community_for_delete: Выберите удаляемое сообщество
+  select_community_for_add: Выберите добавляемое сообщество
+  add: Добавить
+  change: Поменять
+  to: на
+  show_all_communities: Показать все сообщества
+  your_communities: Ваши сообщества
+  path: Путь
+  select_main_parent: Выберите ведущего родителя
+  members_amount: участников
+  NotesAmount: По количеству постов
+  UserReputation: По репутации
+  Random: В случайном порядке
+  LastJoined: По времени вступления - сначала новые
+  FirstJoined: По времени вступления - сначала старые
+  on_theme: на тему
+  view_profile: Просмотр профиля
+  save: Сохранить
+  up: Вверх
+  down: Вниз
+  priorities_saved: Приоритеты сохранены
+  all_communities: Все сообщества
+  themes: Темы
+  rss_messages_for_this_theme: RSS лента этой темы
+  this_is_reply_to_note: Это ответ на заметку
+  block_user_abbr: Заблок.
+  unblock_user_abbr: Разблок.
+  block_user: Заблокировать пользователя
+  unblock_user: Разблокировать пользователя
+  print_version: Версия для печати
+  first_replies: первые ответы
+  linked_url: Ссылка
+  linked_title: Заголовок
+  link_to_url: Связать
+  all_replies: все ответы
+  read_more: Читать далее
+  page: стр.
+  Page: Страница
+  like: Нравится
+  not_like: Не нравится
+  selected_theme: Выделенная
+  LastReplied: Последние отвеченные
+  HotAndThenLastReplied: Горячие темы и потом последние отвеченные
+  AdminSelectedAndThenLastReplied: Выделенные администратором и потом последние отвеченные
+  LastThemes: По времени создания - сначала новые темы
+  FirstThemes: По времени создания - сначала старые темы
+  your_tags: Ваши метки
+  exclude_from_community: Исключить из сообщества
+  has_excluded_from_community: исключён из сообщества
+  invite_to_community: Пригласить в сообщество
+  invite_user: Пригласить пользователя
+  to_community: в сообщество
+  send_invitation: Отправить приглашение
+  invitation_sent: Приглашение отправлено на e-mail пользователя
+  send_invitation_email_to_user: Отправить письмо с приглашеним пользователю
+  add_language: Добавить язык
+  add_family_member: Добавить члена семьи
+  add_instant_messenger: "Добавить псевдоним в соцсетях"
+  change_whole_profile_visibility_to: Поменять видимость всего профиля на
+  change_visibilities_of_all_photos: Поменять видимость всеx фотографий на
+  new_theme: Новая тема
+  of: из
+  your_comment: Ваш комментарий
+  go_to_full_version: Нажмите сюда для просмотра полной версии сайта
+  full_version: Полная версия сайта
+  all_new_themes: Все новые темы
+  new_themes: Новые темы
+  NewThemes: Новые темы
+  ArchiveThemes: Архивные темы
+  social_network: Социальная сеть
+  expand_all_new_themes: Развернуть
+  collapse_all_new_themes: Свернуть
+  seo_settings: Настройки SEO
+  users_settings: Настройки пользователей
+  change_photo: Сменить аватар
+  upload_photo: Закачать фото
+  all: всего
+  first: первых
+  replies_to_note: Ответы на сообщение
+  answers_to_message: "Ответы на сообщения (%{count})"
+  whole_discussion: Вся дискуссия
+  note_already_created: Такая заметка уже создана
+  get_from_vkontakte: Взять из 'ВКонтакте'
+  add_site_url: Добавить ссылку
+  related_articles: Связанные статьи
+  hot_themes: Горячие темы
+  read_more_on_teammy: Читайте дальнейшее обсуждение на сайте Тимми
+  full_discussion_on_teammy: Всё обсуждение на сайте Тимми
+  LastComments: Сначала последние
+  FirstComments: Сначала первые
+  MaxRating: По убыванию рейтинга
+  MinRating: По возрастанию рейтинга
+  invalid_credentials: Неверные данные аутентификации
+  article_announcement: Анонс статьи
+  from: от
+  get_title: Взять заголовок
+  linked_social_networks: Прикрепленные социальные сети
+  facebook: Facebook
+  vkontakte: ВКонтакте
+  google: Google
+  social_connected: Подключен
+  social_not_connected: Не подключен
+  social_do_connect: Подключить
+  remove_connection: Удалить соединение
+  remove_connection_confirm: Вы действительно хотите удалить соединение?
+  some_fields_required: Полученных данных из %{provider} недостаточно для регистрации учетной записи. Пожалуйста, заполните недостающие поля.
+  social_network_linked: Ваша учетная запись связана с социальной сетью %{provider}
+  theme_title: Заголовок темы
+  theme_communties: Сообщества темы
+  for_themes_only: Только для тем
+  selected_themes_remembered: Выбранные темы запомнены
+  remembered_themes_cleared: Запомненные темы очищены
+  such_announcement_already_exists: Такой анонс уже существует!
+  get_announcement: Взять анонс
+  announcement_created_successfully: Анонс создан удачно
+  notes_site_urls_url: Связанная статья
+  yes_: Да
+  no_: Нет
+  default: По умолчанию
+  update_title: Обновить подпись
+  joined_themes: Присоединенные темы
+  redirect_on_exteranl_link: Переход по внешней ссылке
+  confirm_redirect: Если Вы еще не передумали, нажмите на
+  cancel_redirect: Если Вы не хотите рисковать безопасностью Вашего аккаунта и компьютера, нажмите
+  guest: Гость
+  your_name: Ваше имя
+  photo_size_can_not_exceed: Размер фото не должен превышать
+  you_have_already_uploaded_max_photos_amount: Вы уже загрузили максимально допустимое количество фотографий
+  create_independent_announcement: Создать независимый анонс
+  announcement_saved_for_linking_with_existent_discussion: Анонс сохранён для связи с существующей дискуссией
+  article_linked_successfully: Статья удачно связана с дискуссией
+  this_article_already_linked_with_discussion: Эта статья уже связана с дискуссией!
+  main_page: Главная
+  my_cabinet: Мой кабинет
+  my_friends: Мои друзья
+  your_friends: Ваши друзья
+  my_communities: Мои сообщества
+  is_invalid: "ошибочные:"
+  is_not_category: не является ссылкой на страницу категории!
+  is_not_article: не является ссылкой на страницу статьи!
+  add_url_mirror: Добавить зеркало
+  go: Перейти
+  social_nets: Социальные сети
+  new_articles: Новые статьи
+  collapse: Свернуть
+  expand: Развернуть
+  community_sponsor: Спонсор сообщества
+  and_more: и ещё
+  members: участников
+  send_to_friend: Послать другу
+  new: Новые
+  about: О нас
+  contacts: Связаться с нами
+  ads: Реклама
+  our_sites: Наши сайты
+  us_already: Нас уже
+  privacy: Конфиденциальность
+  extended: Расширенная
+  short: Сокращённая
+  go_to_discussion: Перейти к дискуссии
+  sign_up: Зарегистрироваться
+  send_message: Отправить сообщение
+  add_to_friends: Добавить в друзья
+  friends_requests: Предложения дружбы
+  remove_from_friends: Удалить из друзей
+  best_comments_of_day: Лучшие комментарии за день
+  search_teammy: Поиск по Тимми
+  go_to_fill: Перейти к заполнению
+  ok: OK
+  birth_date_abbr: д.р.
+  discussions: Дискуссии
+  fill_the_field: Заполните поле
+  add_user_field: Добавить другое увлечение
+  edit_long: Редактировать
+  all_photos: Все фотографии
+  I_red_and_agreed_to: Я прочитал и согласен <br />с
+  rules_of_social_network_teammy: пользовательским соглашением сайта Teammy
+  using_teammy_account: используя учетную запись Тимми
+  registration_in_social_network_teammy: Регистрация в социальной сети Тимми
+  forget_password?: Забыли пароль?
+  has_not_recieved_instructions_on_registration_confirmation?: Не получили инструкции по подтверждению регистрации?
+  all_notes: Все заметки
+  remember_me: Запомнить меня
+  already_linked_with: уже связана с
+  successfully_linked_with: удачно связано с
+  create_community: Создать сообщество
+  select_parent_community: Метка входит в сообщество
+  registration: Регистрация
+  enter_to_system: Вход в систему
+  send_instruction: Отправить
+  send_instruction_on_confirmation: Отправить<br />инструкцию<br />по<br />подтверждению
+  or: или
+  photo_title_updated_successfully: Заголовок фотографии удачно обновлён
+  note_editing: Редактирование заметки
+  new_replies: новых ответов
+  view: Вид
+  all_announcements_of_week: Все анонсы за неделю
+  see_female: видна
+  see_middle: видно
+  see_male: виден
+  all_active_discussions: Все активные дискуссии
+  months: месяцев
+  weeks: недель
+  days: дней
+  hours: часов
+  minutes: минут
+  show: Показывать
+  default_male_name: Тимофей Тимофеевич
+  default_female_name: Тима Тимофеевна
+  to_top: Наверх
+  discussions_rss: RSS лента дискуссий
+  notes_rss: RSS лента заметок
+  communities_rss: RSS лента сообществ
+  all_notes_rss: RSS лента всех заметок
+  all_communities_rss: RSS лента всех сообществ
+  all_users_rss: RSS лента всех пользователей
+  all_users: Все пользователи
+  filter_setting: Настройка фильтров вывода
+  by_date: По дате
+  by_rating: По рейтингу
+  by_comments: По популярности(кол-ву комментариев)
+  anonce: Анонс c cайтов
+  from_sites: Статья с тимми
+  select: Выбрать
+  blank_sponsor: Нет спонсора
+  copy: Копировать
+  from_all: Со всех
+  for_changing_password_we_need_your_current_password: для изменения пароля нам нужен Ваш текущий пароль
+  leave_blank_if_you_dont_want_to_change: оставьте пустым, если не хотите поменять
+  changing_email: Изменение адреса электронной почты
+  guest: Гость
+  note_for_reply_to: заметку
+  copy_url_for_rss_reader: Скопировать ссылку для rss-ридера
+  to_photogallery: фотогалерею
+  you_can_add_photos_without_text_to: Вы можете поставить фото без текста в
+  please_write_something_and_you_can_publish_your_note: Если вы хотите вставить фото в заметку, пожалуйста, напишите что-нибудь ( минимум %{note_body_with_photos_min_chars_amount} знаков), и тогда вы сможете опубликовать свою заметку.
+  subscribe: Подписаться
+  unsubscribe: Отписаться
+  sign_in_with: Войти с помощью
+  enter_your_email: Введите адрес вашей электронной почты
+  replies: Ответы
+  create_album: Создать альбом
+  go_to_photo_album: Перейти в альбом
+  you: Вас
+  add_photo: Добавить фото
+  photo_albums_count_old:
+    zero: "У %{name} еще нет альбомов"
+    one: "У %{name} 1 альбом"
+    few: "У %{name} %{count} альбома"
+    other: "У %{name} %{count} альбомов"
+  photo_albums_count:
+    zero: "еще нет альбомов"
+    one: "1 альбом"
+    few: "%{count} альбома"
+    other: "%{count} альбомов"
+  at: У
+  photos_count:
+    zero: "(Еще нет фотографий)"
+    one: "(1 фотография)"
+    few: "(%{count} фотографии)"
+    other: "(%{count} фотографий)"
+  photo_count: "(%{count} фото)"
+  user_photo_album: "Альбом пользователя %{username}"
+  updated_at: Обновлен
+  back: назад
+  back_photo_albums: К оглавлению альбомов
+  back_to_photo_album: Назад к альбому
+  confirm_delete: Вы уверены?
+  quick_switch_to_album: "Быстрый переход к альбому:"
+  album: Альбом
+  description: Описание
+  of: из
+  visibility: Видимость
+  repost: Поделиться
+  default_photo_album_name: Мои фотографии
+  upload: Закачать
+  make_as_community: Сделать сообществом
+  new_reply: Н
+  expand_all_communities: Развернуть все
+  collapse_all_communities: Свернуть все
+  you_have_published: Вы опубликовали
+  when_note_will_have: как только заметка наберет
+  to_replies: ответов
+  it_will_turn_to: она превратится в
+  to_discussion: дискуссию
+  Photo_albums_setting: Настройки фотоальбомов
+  sign_up_with: Зарегистрироваться с помощью
+  password_changing: Изменение пароля
+  mail_with_new_password_is_sent_to_your_email: Письмо с новым паролем отправлено на Ваш email
+  update_photo: Обновить
+  by_clicking_on_sign_up_button_you_agree_to: Нажимая кнопку регистрации, вы соглашаетесь с
+  TechManager: Специалист технической поддержки
+  ContentManager: Администратор контента
+  AdsManager: Менеджер по рекламе
+  RegistrationManager: Специалист по вопросам регистрации пользователей
+  feedback_sent_successfully: Ваше сообщение успешно отправлено
+  Communities_setting: Настройки сообществ
+  select_file: Выберите файл
+  new_private_messages: Личные сообщения
+  new_private_messages_count:
+    zero: "(нет новых)"
+    one: "(1 новое)"
+    few: "(%{count} новых)"
+    other: "(%{count} новых)"
+  inbox: Входящие
+  sent: Отправленные
+  write_new_message: Напишите новое сообщение
+  write_message: Написать сообщение
+  write: Написать
+  new_message: Новое сообщение
+  send_message_to_user: "Ваше сообщение пользователю <span> %{user} </span> отправлено успешно"
+  message_from_user: "Сообщение от пользователя: "
+  new_themes_of_community: Новые темы сообщества
+  successfully_add_to_friends: "Пользователь <span> %{user} </span> добавлен в друзья"
+  successfully_remove_from_friends: "Пользователь <span> %{user} </span> удален из друзей"
+  offers_his_friendship: предлагает вам дружить
+  online: Онлайн
+  offline: Оффлайн
+  approve: Принять
+  reject: Отклонить
+  set_aside: Отложить на потом
+  approve_friend: "Пользователь <span> %{user} </span> добавлен в друзья"
+  reject_friend: "Пользователю <span> %{user} </span> отказано в дружбе"
+  hold_friend: "Дружба с <span> %{user} </span> отложена"
+  successfully_add_friendship_category: "Добавлена категория <span> %{category} </span>"
+  create_friends_category: Новая категория
+  add_friendship_category: Добавить категорию
+  successfully_update_friend_friendship_category: "Пользователь перемещен в категорию <span> %{category} </span>"
+  friendship_category: Категория
+  update_friendship_category: Переместить
+  change_category: "Переместить в категорию:"
+  add_to_category: "Добавить в категорию:"
+  update_friendship_category_name: Обновить имя
+  successfully_update_friendship_category: Имя категории изменено
+  successfully_remove_friendship_category: Категория удалена
+  successfully_send_invites: Приглашения отправлены
+  invite_friends: Пригласить друзей
+  invite: Послать
+  invite_you: приглашает вас на сайт
+  enter_friends_emails: Введите адреса друзей
+  Back: Назад
+  all_friendship_requests: Все предложения
+  my_friends_requests: Мои предложения
+  inbox_friends_requests: Предложения мне
+  you_offer_friendship: Вы предложили дружить
+  no_requests: Нет предложений
+  successfully_cancel_request: "Запрос на добавление в друзья <span> %{user} </span> отменен"
+  user: Пользователь
+  approve_friendship: добавил вас в друзья
+  reject_friendship: отказал вам в дружбе
+  sort_friends_by: "Сортировать друзей по:"
+  sort_friends:
+    by_status: статусу
+    by_last_sign_in: дате последнего захода
+    by_last_action: дате последнего действия
+    by_last_communication: дате последнего общения
+  photos_order:
+    last_photos: последние
+    last_photos_by_rating: рейтинговые
+    last_photos_by_comments_amount: комментируемые
+  full_search: Расширенный поиск
+  find_friends_by_name: Поиск друзей по имени
+  search_results: Результат поиска
+  birth_date: "Дата рождения:"
+  city: "Населенный пункт:"
+  friends_not_found: Друзья не найдены
+  back_to_the_simple_search: Вернуться к простому поиску
+  find_friends_by:
+    name: "По имени:"
+    communities: "По принадлежности к сообществу:"
+    work: "По работе:"
+    education: "По учебе:"
+    interest: "По интересам:"
+    city: "По географии:"
+    email: "Поиск контактов по электронной почте:"
+    fb: "По нику facebook:"
+    vk: "По нику vkontakte:"
+  interests: Интересы
+  higher_education: Вуз
+  users_languages: Владение языками
+  all_friends: Все друзья
+  user_friends: "Друзья %{user}"
+  friends_feed: Лента друзей%{count}
+  answer_to_note: Ответ на заметку
+  friends_feed_rss: RSS лента друзей
+  find_friends: Найти друзей
+  find_friends_by_interests: Найди друзей по интересам
+  find_friends_description: "Воспользуйся расширенным поиском по сайтам, социальной сети, обсуждениям и найди своих новых друзей!"
+  no_friends: У вас 0 друзей
+  all_messages: Все сообщения
+  sent_by: Отправил
+  terms_of_service: Соглашение
+  holded_friendships: "Отложенные предложения дружбы <span>(%{count})</span>"
+  familyar: Знакомые
+  add_more_emails: Добавить еще адреса
+  user_with_email_already_registered: "Вы хотите пригласить вашего друга с адресом %{email}, однако он уже зарегистрирован в нашей системе, посмотрите его "
+  profile: профиль
+  and: и
+  add_him_to_friend: подружитесь с ним.
+  more_friends: Еще друзья
+  default_invite_text: Пользователь приглашает вас на Teammy.com
+  cannot_invite_yourself: Вы не можете пригласить сами себя.
+  notes_with_photos_created_successfully: Заметки с фотографиями созданы
+  create_note_with_photo_error: Ошибка создания заметки с фотографией
+  back_to_friends: "<- Назад к Моим друзьям"
+  photo_urls_empty: Отсутствуют ссылки на фотографии
+  user_site_absent: Отсутствует пользователь-сайт
+  photo_gallery_community_for_site_absent: Отсутствует сообщество фотогалерей для сайта
+  note_with_this_photo_url_already_exists: Такая заметка с фотографией уже существует
+  communities_order:
+    CommunitiesFirst: сообщества первыми
+    CommunitiesLast: сообщества в конце
+    MaxNotesAmount: по максимальному кол-ву сообщений
+    MinNotesAmount: по минимальному кол-ву сообщений
+    MaxUsersAmount: по максимальному кол-ву участников
+    MinUsersAmount: по минимальному кол-ву участников
+  note: (заметка)
+  photo: (фотография)
+  discussion: (дискуссия)
+  access_denied: Доступ запрещен
+  avatar_upload_error: Ошибка загрузки фотографии!
+  Companies: Компании
+  new_company: Новая компания
+  edit_company: Редактировать компанию
+  company_successfully_updated: Информация о компании обновлена
+  company_successfully_created: Компания создана
+  no_param_communities: Нет параметра communities
+  company_email_exist: Компания с таким адресом email уже существует
+  Company_admins: Администраторы компании
+  Company_social_networks: Страницы в социальных сетях
+  successfully_subscribed: Вы успешно подписались
+  successfully_unsubscribed: Вы успешно отписались
+  Company_admins: Администраторы компании
+  company_holded: Страница заблокирована
+  company_holded_for_company_admin: "Страница заблокирована. Если вы не согласны с данным решением, пожалуйста, обратитесь к администрации"
+  subscriptions: Сайты, на которые вы подписаны
+  delete_company?: Удалить компанию?
+  Site: Сайт
+  guests_notes: Заметки гостей
+  guests_notes_rss: RSS лента заметок гостей
+  of_user: пользователя
+  show_file: Просмотр файла
+  site_map: Карта сайта
+  main_divisions: Основные разделы
+  info: Информация
+  twitter: Твиттер
+  loading: Загрузка
+  increase: Увеличить
+  decrease: Уменьшить
+  next_photo: Следующая фотография
+  prev_photo: Предыдущая фотография
+  close: Закрыть
+  your_reply_will_be_published_after_moderation: Cпасибо, ваш ответ будет опубликован после модерации
+  comments_feed: Лента комментариев (%{amount})
+  new_notes: Новые заметки (%{amount})
+  new_notes_in_communities: Новые заметки в сообществах (%{amount})
+  registered_users_replies: Ответы от зарегистрированных пользователей в заметках (%{amount})
+  guests_replies: Ответы от гостей в заметках (%{amount})
+  registered_users_replies_in_communities: Ответы от зарегистрированных пользователей в сообществах (%{amount})
+  guests_replies_in_communities: Ответы от гостей в сообществах (%{amount})
+  create_site_map_xml: Создать карту сайта в xml-формате
+  list_site_map_xml: Просмотр xml-файлов карты сайта
+  successfully_created: создана удачно
+  no_photo: Без фото
+  not_found_message: Извините, мы не нашли страницу, которую вы ищете. Возможно вам поможет карта сайта.
+  announcement_already_published: Этот анонс уже опубликован
+  published_announcements: Опубликованные анонсы (%{amount})
+  not_published_announcements: Неопубликованные анонсы (%{amount})
+  The_page_you_were_looking_for_doesnt_exist_404: Страница не существует (404)
+  article_not_published: Не опубликована
+  comments_archive: Архив комментариев (%{amount})
+  archive_notes: Архивные заметки (%{amount})
+  archive_notes_in_communities: Архивные заметки в сообществах (%{amount})
+  for_announcements_only: Только для анонсов
+  show_on_main_page: Показывать на главной
+  descendant_communities: Вложенные сообщества
+  can_access_messages_after: Вы сможете посылать личные сообщения участникам после %{days} дней на сайте и %{notes_count} заметок
+  theme_communities: Сообщества темы
+  I_quote: Цитирую
+  rss_feeds: Ленты RSS
+  photo_deleted_successfully: Фотография успешно удалена
+  on_all: Во всех
+  you_have_published_note_on_your: Вы опубликовали заметку на вашей
+  wall: стене
+  errors:
+    messages:
+      extension_white_list_error: "Вы не можете закачать %{extension} файлы, разрешенные типы файлов: %{allowed_types}"
+  hide_note?: Скрыть заметку?
+  hide_photo?: Скрыть фото?
+  hide_reply?: Скрыть ответ на заметку?
+  note_hid_successfully: Заметка скрыта
+  photo_hid_successfully: Фото скрыто
+  delete_reposted_note?: Эта заметка является оригиналом для одного или нескольких репостов! Удалить заметку и все её репосты?
+  delete_repost?: Удалить заметку, которой вы поделились?
+  not_define: Не определять
+  set_defaults: Изменить на настройки по умолчанию
+  individual_settings_have_set: Установлены индивидуальные настройки
+  oauth_token_absent: Отсутствует oauth токен
+  admin_best: Рейтинг админа
+  go_to_theme: Перейти к теме
+  posting_type:
+    now: Сейчас
+    from_last_post: От времени последнего поста
+    from_now: От текущего времени
+    custom: Указать вручную
+    after: Через
+  not_confirmed: Не подтверждена
+  always_masked_on_joomla_sites: На сайтах джумлы маскируются всегда
+  relative_photo_exists: "Такое фото уже есть:"
+  applied_to_descendant_photo_communities_only: Применяется только к вложенным фото-сообществам этого сообщества
+  photo_community: Фото-сообщество
+  please_wait_n_seconds: Пожалуйста, подождите %{count} секунды!
+  it_is_not_interesting: Это не интересно
+  do_not_show_news_of_user: Не показывать новости пользователя %{user_name}?
+  news_of_user_will_not_be_shown: Новости пользователя %{user_name} не будут показываться
+  show_news: Показывать новости
+  news_of_user_will_be_shown: Новости пользователя %{user_name} будут показываться в ленте друзей
+  if_you_do_not_want_to_see_the_posts_of_this_community_you_should_leave_it: Если вы не хотите видеть записи этого сообщества, вы должны его покинуть
+  page_full: страница
+  seo_index: "SEO: индексация сайта"
+  absent: Отсутствует
+
+  help:
+    available_days: Для более подробной настройки воспользуйтесь "Временем доступности"
+    available_url_ids: Введите список id через запятую, 0 - для всех, для id c 1 по 100 - 1-100
+    sort_by_admin: В случае,если отмечена эта галочка, статьи будет браться из списка выше
+    available_urls: При настройке "показывать на всех страницах" данный пункт будет исключать из показа. При настройке "не показывать на всех страницах" данный пункт будет включать показ. Если пункт не зависит от настройки "показывать на всех страницах", то он настраивается независимо от нее и включение/исключение не работают
+    depend_on_show_on_all_pages: Зависит  от настройки "показывать на всех страницах"
+    not_depend_on_show_on_all_pages:  Не зависит от настройки "показывать на всех страницах"
+
+  photo_albums_order:
+    name: по алфавиту
+    updated_at: по дате обновления
+    created_at: по дате создания
+
+  users:
+    name_notice: Укажите Ваше имя!
+    avatar_notice: Загрузите фотографию!
+    sex_notice: Укажите Ваш пол!
+    city_notice: Укажите Ваш населённый пункт!
+    birth_date_notice: Укажите дату Вашего рождения!
+    education_notice: Заполни информацию об образовании!
+    school_notice: Укажите школу, которую Вы окончили!
+    higher_education_notice: Укажите ВУЗ, который Вы окончили!
+    languages_notice: Укажите языки, которыми Вы владеете!
+    birth_city_notice: Укажите место Вашего рождения!
+    marital_status_notice: Укажите Ваше семейное положение!
+    family_members_notice: Укажите членов Вашей семьи!
+    profile_visibility: Видимость профиля
+    photos_visibility: Видимость
+    photos_visibility_long: Видимость всеx фотографий
+    friends_visibility_long: Видимость друзей
+
+  marital_statuses:
+    in_free_relationships: В свободных отношениях
+    have_girlfriend: Есть подруга
+    have_boyfriend: Есть друг
+    without_pair: Без пары
+    not_married_man: Не женат
+    not_married_woman: Не замужем
+    married_man: Женат
+    married_woman: Замужем
+    married_man-married_woman: Женат/замужем
+    it_is_complicated: Все сложно
+    it_is_complicated1: Всё сложно
+    widowed_man-widowed_woman: Вдовец/вдова
+
+  family_members:
+    relation_notice: Укажите степень родства члена Вашей семьи!
+    name_notice: Укажите имя члена Вашей семьи!
+    birth_date_notice: Укажите дату рождения члена Вашей<br />семьи!
+
+  activerecord:
+    errors:
+      format:
+        association: "{{message}}"
+      models:
+        user:
+          attributes:
+            name:
+              blank: не может быть пустым!
+              banned: Недопустимое имя!
+            email:
+              blank: не может быть пустой!
+              taken: должна быть уникальной!
+              banned: Недопустимый Email!
+              invalid: некорректная!
+            password:
+              blank: не может быть пустым!
+              confirmation: "не совпадает с подтверждением!"
+              too_short: "слишком короткий (минимум 6 символов) !"
+            current_password:
+              blank: должен быть введён!
+              invalid: неверный!
+            confirmation_token:
+              invalid: неверный!
+            reset_password_token:
+              blank: не может быть пустым!
+              invalid: неверный!
+            ip:
+              banned: Недопустимый ip-адрес!
+            terms_of_service:
+              accepted: должны быть Вами прочитаны и одобрены!
+        comment:
+          attributes:
+            body:
+              blank: не может быть пустым!
+            user_name:
+              blank: не может быть пустым!
+        setting:
+          attributes:
+            key:
+              blank: не может быть пустым!
+              taken: должен быть уникальным!
+            value:
+              blank: не может быть пустым!
+        client_application:
+          attributes:
+            name:
+              blank: не может быть пустым!
+            url:
+              blank: не может быть пустым!
+              invalid: неверный!
+            callback_url:
+              blank: не может быть пустым!
+              invalid: неверный!
+        note:
+          attributes:
+            title:
+              blank: не может быть пустым!
+            body:
+              blank: не может быть пустым!
+              too_short: "слишком короткий (минимум %{note_body_min_chars_amount} символов) !"
+            privacy:
+              blank: должна быть выбрана!
+            notes_site_urls:
+              invalid: неверные!
+            ip:
+              banned: Недопустимый ip-адрес!
+            notes_communities:
+              invalid: недопустимые!
+
+        users_instant_messenger:
+          attributes:
+            name:
+              blank: не может быть пустым!
+            instant_messenger:
+              blank: должна быть выбрана!
+        users_language:
+          attributes:
+            language_id:
+              blank: должен быть выбран!
+        family_member:
+          attributes:
+            relation_id:
+              blank: должно быть выбрано!
+        notes_community:
+          attributes:
+            community_id:
+              taken: "Такая метка уже существует: "
+        community:
+          attributes:
+            name:
+              blank: не может быть пустым!
+              banned: Недопустимая метка!
+              taken: уже существует!
+            communities_site_urls:
+              invalid: неверные!
+            id1:
+              taken: уже существует!
+            id:
+              taken: уже существует!
+        notes_site_url:
+          attributes:
+            title:
+              blank: не может быть пустым!
+            name:
+              blank: не может быть пустым!
+            url:
+              blank: не может быть пустым!
+              taken: уже связана с темой!
+        communities_site_url:
+          attributes:
+            title:
+              blank: не может быть пустым!
+            name:
+              blank: не может быть пустым!
+            url:
+              blank: не может быть пустым!
+              taken: уже связано с категорией!
+        url_mirror:
+          attributes:
+            url:
+              blank: не может быть пустым!
+        photo_album:
+          attributes:
+            name:
+              blank: не может быть пустым!
+        feedback:
+          attributes:
+            role:
+              blank: должен быть выбран!
+            guest_name:
+              blank: не может быть пустым!
+            guest_email:
+              blank: не может быть пустым!
+        message:
+          attributes:
+            body:
+              blank: не можеть быть пустым!
+            recipient_id:
+              blank: не может быть пустым!
+        friendship_category:
+          attributes:
+            name:
+              blank: не может быть пустым!
+              too_short: "слишком короткое (минимум 2 символа) !"
+              taken: уже существует
+        friendship:
+          attributes:
+            friend_id:
+              taken: уже сделали предложение дружбы!
+        invite:
+          attributes:
+            email:
+              blank: не может быть пустым!
+              invalid: имеет неверный формат!
+        company:
+          attributes:
+            name:
+              blank: не может быть пустым!
+            email:
+              blank: не можеть быть пустой!
+              invalid : имеет неверный формат!
+              taken: уже существует у другой компании!
+            vk_page:
+              invalid: имеет неверный формат!
+            fb_page:
+              invalid: имеет неверный формат!
+            twitter_page:
+              invalid: имеет неверный формат!
+            logo:
+              blank: не может быть пустой!
+            info:
+              blank: не может быть пустой!
+
+    models:
+      comment: Комментарии
+      user: Пользователи
+      setting: Настройки
+      role: Роли пользователей
+      filter: Бан-фильтры пользователей
+      communities_filter: Бан-фильтры сообществ
+      client_application: Клиентское приложение
+      country: Страна
+      region: Регион
+      city: Населённый пункт
+      marital_status: Семейное положение
+      education: Образование
+      photo: Фотографии
+      user_field: Поля пользователя
+      family_member: Члены семьи
+      relation: Родственники
+      profile: Профиль пользователя
+      language: Язык
+      privacy: Конфиденциальность
+      note: Заметка
+      theme: Темы
+      instant_messenger: Псевдонимы в службах мгновенных сообщений
+      avatar: Фото
+      community: Сообщество
+      new_community: Новые сообщества
+      tag: Метки
+      community_type: Тип сообщества
+      community_members_order: Порядок сортировки членов сообщества
+      community_member: Участники сообществ
+      themes_order: Порядок сортировки тем
+      themes_setting: Настройки тем
+      external_link: Cайты сети beautynet
+      notes_site_url: Cвязанные статьи на сайтах
+      communities_site_url: Cвязанные разделы и категории на сайтах
+      authentication: Аутентификации с внешних сайтов
+      announcement: Анонсы с сайтов
+      url_mirror: Зеркала сайтов
+      sponsor: Спонсоры
+      site_part: Модули
+      site_part_setting: Настройки модулей
+      available_hour: Время показа модуля
+      available_url: Доступные url
+      new_articles_module_setting: Настройки модуля "Новые статьи" для сообщества
+      our_site: Сайт
+      new_article: Статья
+      setting_category: Группы настроек
+      photo_album: Фотоальбом
+      notes_filter: Заметки в бан
+      feedback: Обратная связь
+      message: Сообщение
+      static: Статическая страница
+      special_community: Специальное сообщество
+      company: Компании
+      deleted_company: Удаленные компании
+      new_company: Новые компании
+      holded_company: Заблокированные компании
+      users_company: Администратор
+      public_file: Загруженный файл
+      site_map: Карта сайта
+      note_icon: Иконка анонса
+      default_community: Сообщество по умолчанию
+      communities_roles: Роли сообщества
+      posting_type: Отправка
+      censored_word: Запрещённые слова
+      default_photo_community: Фото-сообщество по умолчанию
+      blocked_feed: Заблокированные пользователи в ленте друзей
+
+    attributes:
+      comment:
+        body: Текст комментария
+        hidden: Скрытый?
+        user:
+          name: ваше имя
+        user_name: ваше имя
+        site: Сайт
+        page_id: ID страницы
+        checked: Проверено?
+        remote_ip: IP-адрес автора
+        page_title: Заголовок страницы
+        page_url: URL страницы
+        created_at: Дата добавления
+        hidden: Скрыто?
+      user:
+        name: Имя
+        email: Электронная почта
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        current_password: Текущий пароль
+        confirmation_token: Код подтверждения регистрации
+        reset_password_token: Код подтверждения смены пароля
+        terms_of_service: Соглашение
+        male: Пол
+        birth_date: Дата рождения
+        country: Страна
+        region: Регион
+        city: Населённый пункт
+        education: Образование
+        marital_status: Семейное положение
+        created_at: Дата регистрации
+        last_sign_in_at: Последний раз входил
+        sign_in_count: Посещений
+        banned_time: Заблокирован до
+        family_members: Члены семьи
+        birth_country: Страна рождения
+        birth_region: Регион рождения
+        birth_city: Место рождения
+        birth_place: Место рождения
+        users_languages: Владение языками
+        users_instant_messengers: Псевдонимы в службах мгновенных сообщений
+        user_fields_values: Личные сведения
+        photos: Фотографии
+        avatars: Фото
+        school: Школа
+        higher_education: ВУЗ
+        avatar: Фото
+        reputation: Репутация
+        roles: Роли
+        communities: Сообщества
+        block: ""
+        reset_password: ""
+        avatar_title: Заголовок для фото
+        number_of_photos: Максимальное количество фотографий
+        special_communities: Специальные сообщества
+        special_communities1: Специальные сообщества
+        profile: " "
+        profile_attributes : " "
+        users_communities: Сообщества
+        users_special_communities: Специальные сообщества
+        notes_count: Количество постов
+        publish_themes_as_community: Публиковать ведущую заметку от имени сообщества?
+        publish_comments_as_community: Публиковать все ответы на заметку от имени сообщества?
+        posting_type_id: Отправка
+        posting_after_hours: ч.
+        posting_after_minutes: мин.
+        posting_at: Время
+        show_not_posted_notes: Показывать отложенные посты?
+        confirmed_at: Регистрация подтверждена
+        show_not_posted_notes_in_friends_feed: Показывать отложенные посты в ленте друзей?
+        show_not_posted_notes_in_user_discussions: Показывать отложенные посты в дискуссиях?
+        include_comments_to_friends_feed: Включать ответы на заметки в ленту друзей?
+        show_notes_as_community_on_user_notes_page: Показывать заметки от имени сообщества в заметках?
+        show_notes_as_community_on_user_discussions_page: Показывать заметки от имени сообщества в дискуссиях?
+        show_not_posted_comments: Показывать отложенные комментарии?
+        render_main_path_on_user_communities_page: Выводить названия разделов на странице "Мои сообщества"?
+        show_photo_communities_on_user_communities_page: Показывать фото-сообщества на странице "Мои сообществa"?
+        render_discussions_in_user_notes: Показывать диcкуссии на странице "Мои заметки"?
+      profile:
+        social_show_notes: Заметки
+        social_show_discussions: Дискуссии
+        social_show_friends_notes: Материалы друзей
+        social_show_announcements: Статьи
+        social_show_new: Показывать новые
+        social_show_most_discussed: Самые обсуждаемые
+        social_show_for_you: В которых вам ответили
+        social_show_photos: Фото
+        photo_albums_order: Сортировать альбомы
+        photos_order: Показывать фото в профиле
+      setting:
+        title: Параметр
+        key: Параметр
+        value: Значение
+        image: Иконка
+        setting_category: Группа
+      role:
+        name: Роль
+        human_name1: Роль
+        min_days_amount: Пребывание на сайте не меньше, дней
+        min_notes_amount: Количество сообщений не меньше
+        min_reputation: Репутация не меньше
+        tags_are_communities: Метки сразу становятся сообществами?
+        priority: Приоритет
+      filter:
+        ip: IP-адрес
+        email: Email
+        name: Имя
+      communities_filter:
+        name: Название
+      client_application:
+        name: Имя приложения
+        callback_url: URL отзыва
+      user_field:
+        name: Название
+      family_member:
+        relation_id: Наименование члена семьи
+        name: Имя
+        birth_date: Дата рождения
+      relation:
+        name: Член семьи
+        priority: Приоритет
+      language:
+        name: Язык
+      note:
+        title: "Заголовок: "
+        tag: Метки
+        body: Текст
+        privacy: Видимость
+        created_at: Создана
+        updated_at: Изменена
+        communities: Сообщества
+        user: Автор
+        private_discussion: Приватная
+        public_discussion: Сделать дискуссию публичной?
+        comments_amount: комментариев
+        admin_selected: Выделить
+        user_ip: IP-адрес автора
+        hide_link_to_print_version: Скрыть ссылку на версию для печати?
+        hide_theme_title_in_title: Скрыть заголовок темы в заголовке html-страницы?
+        hide_theme_title_in_keywords: Скрыть заголовок темы в ключевых словах html-страницы?
+        noindex: Скрыть страницу от индексирования роботами?
+        nofollow: Скрыть от роботов ссылки на странице?
+        hide_theme_title_in_title_p: Скрыть заголовок темы в заголовке html-страницы в версиях для печати?
+        hide_theme_title_in_keywords_p: Скрыть заголовок темы в ключевых словах html-страницы в версиях для печати?
+        noindex_p: Скрыть страницу от индексирования роботами в версиях для печати?
+        nofollow_p: Скрыть от роботов ссылки на странице в версиях для печати?
+        notes_site_urls: Связанные статьи на сайтах
+        seo: Настройки SEO
+        comments: Комментарии
+        parent: Ответ на заметку
+        communities_admin_links: Сообщества
+        user_name_or_email: Автор
+        join: ""
+        published_announcement?: Опубликован?
+        disable_comments_on_sites: Отключить вывод комментариев на сайты?
+        saved_announcement: Добавить сохраненный анонс?
+        notes_site_urls: Cвязанные статьи на сайтах
+        photo_album_id: "Добавить в альбом: "
+        image: "Фотография: "
+        privacy_id: "Видимость: "
+        admin_best: Добавить к лучшим
+        checked: Проверена
+        published: Опубликован
+        admin_viewed_at: Просмотрена админом
+        note_icon1: Иконка анонса
+        note_icon: Иконка анонса
+        guest_name: Имя гостя
+        hide_comments_amount: Скрыть количество комментариев?
+        theme_title: Заголовок темы
+        theme_user_email: Aвтор темы / сайт
+        theme_user_name: Имя автора темы
+        note_user_email: Автор
+        last_comment_at: Послений ответ создан
+        remote_ip: IP-адрес
+        hidden: Скрытая
+        repost_id: Репост заметки
+        theme_id: ""
+        user_as_community: От имени сообщества
+        user_as_community_id: От имени сообщества
+        posted_at: Опубликована
+        notes_communities: Метки заметки
+        photo_used: Фото использовано в заметках?
+      users_instant_messenger:
+        name: Псевдоним
+        instant_messenger: Соцсеть
+      users_language:
+        language_id: Язык
+        language: Язык
+      instant_messenger:
+        name: Название
+        priority: Приоритет
+        users: Пользователи
+      community:
+        name: Название
+        number: Номер
+        description: Описание
+        icon: ""
+        official: Официальное?
+        notes_amount: Количество заметок
+        category_id: Раздел
+        priority: Приоритет
+        max_pages_for_unregistered_users: Максимальное количество страниц для просмотра незарегистрированными пользователями
+        apply_max_pages_for_unregistered_users_to_all_communities: Распространяется на вложенные?
+        orphan: Сирота?
+        created_at: Создано
+        community_type_or_category: Тип
+        show_on_communities_main_page: На главной странице сообществ
+        last_themes_amount: Количество новых тем для показа на странице раздела/сообщества
+        created_by: Создано
+        all_themes_amount: Количество тем
+        all_comments_amount: Количество комментариев
+        show_on_main_page: На главной странице
+        show_on_main_page_for_registered_users: Для зарегистрированного пользователя
+        show_on_main_page_for_guests: Для незарегистрированного пользователя
+        parents: Принадлежит к сообществам/разделам
+        children: Вложенные сообщества
+        members: Участники
+        moderators: Модераторы
+        themes: Темы
+        comments: Комментарии
+        last_messages: Последние сообщения
+        RSS: Ссылка на RSS
+        site_urls: Связанные разделы и категории на сайтах
+        seo: Настройки SEO
+        main_parent: Ведущий родитель
+        hide_themes_amount: Скрыть на главной странице сообщества
+        hide_themes_amount_on_user_page: Скрыть на главной странице пользователя
+        hide_comments_amount: Скрыть на главной странице сообщества
+        hide_comments_amount_on_user_page: Скрыть на главной странице пользователя
+        render_members_amount: Показывать
+        community_members_order: Порядок
+        community_members_order_on_sites: Порядок на сайтах
+        hide_community_members_avatars_on_sites: Скрыть аватары на сайтах?
+        expand_tree: Выводить полностью развернутое дерево?
+        expand_level: Выводить уровней
+        order: Порядок
+        themes_titles_order: Порядок анонсов и заголовков тем
+        apply_themes_titles_order_to_all_communities: Распространяется на вложенные?
+        themes_order: Порядок тем
+        apply_themes_order_to_all_communities: Распространяется на вложенные?
+        hide_link_to_print_version: Скрыть ссылку на версию для печати?
+        hide_site_name_in_title: Скрыть название сайта в заголовке html-страницы?
+        hide_community_name_in_title: Скрыть название сообщества в заголовке html-страницы?
+        show_parent_communities_in_title: Показывать названия родительских сообществ в заголовке html-страницы?
+        show_child_communities_in_title: Показывать названия вложенных сообществ в заголовке html-страницы?
+        hide_site_name_in_keywords: Скрыть название сайта в ключевых словах html-страницы?
+        hide_community_name_in_keywords: Скрыть название сообщества в ключевых словах html-страницы?
+        show_parent_communities_in_keywords: Показывать названия родительских сообществ в ключевых словах html-страницы?
+        show_child_communities_in_keywords: Показывать названия вложенных сообществ в ключевых словах html-страницы?
+        noindex: Скрыть страницу от индексирования роботами?
+        nofollow: Скрыть от роботов ссылки на странице?
+        apply_hide_site_name_in_title_to_all_communities: Распространяется на вложенные?
+        apply_hide_community_name_in_title_to_all_communities: Распространяется на вложенные?
+        apply_show_parent_communities_in_title_to_all_communities: Распространяется на вложенные?
+        apply_show_child_communities_in_title_to_all_communities: Распространяется на вложенные?
+        apply_hide_site_name_in_keywords_to_all_communities: Распространяется на вложенные?
+        apply_hide_community_name_in_keywords_to_all_communities: Распространяется на вложенные?
+        apply_show_parent_communities_in_keywords_to_all_communities: Распространяется на вложенные?
+        apply_show_child_communities_in_keywords_to_all_communities: Распространяется на вложенные?
+        apply_noindex_to_all_communities: Распространяется на вложенные?
+        apply_nofollow_to_all_communities: Распространяется на вложенные?
+        disable_new_theme_in_community: Запретить создание новых тем при просмотре сообщества?
+        collapse_new_theme_in_community: Сворачивать форму новой темы при просмотре сообщества?
+        render_own_themes_in_common_list: Выводить собственные темы сообщества в общей ленте?
+        render_descendant_themes_in_common_list: Выводить темы вложенных сообществ в общей ленте?
+        roles: Могут просматривать сообщество
+        hide_link_to_print_version_in_new_themes: Скрыть ссылку на версию для печати при выводе новых тем?
+        hide_site_name_in_title_p: Скрыть название сайта в заголовке html-страницы в версиях для печати?
+        hide_community_name_in_title_p: Скрыть название сообщества в заголовке html-страницы в версиях для печати?
+        show_parent_communities_in_title_p: Показывать названия родительских сообществ в заголовке html-страницы в версиях для печати?
+        show_child_communities_in_title_p: Показывать названия вложенных сообществ в заголовке html-страницы в версиях для печати?
+        hide_site_name_in_keywords_p: Скрыть название сайта в ключевых словах html-страницы в версиях для печати?
+        hide_community_name_in_keywords_p: Скрыть название сообщества в ключевых словах html-страницы в версиях для печати?
+        show_parent_communities_in_keywords_p: Показывать названия родительских сообществ в ключевых словах html-страницы в версиях для печати?
+        show_child_communities_in_keywords_p: Показывать названия вложенных сообществ в ключевых словах html-страницы в версиях для печати?
+        noindex_p: Скрыть страницу от индексирования роботами в версиях для печати?
+        nofollow_p: Скрыть от роботов ссылки на странице в версиях для печати?
+        apply_hide_site_name_in_title_to_all_communities_p: Распространяется на вложенные?
+        apply_hide_community_name_in_title_to_all_communities_p: Распространяется на вложенные?
+        apply_show_parent_communities_in_title_to_all_communities_p: Распространяется на вложенные?
+        apply_show_child_communities_in_title_to_all_communities_p: Распространяется на вложенные?
+        apply_hide_site_name_in_keywords_to_all_communities_p: Распространяется на вложенные?
+        apply_hide_community_name_in_keywords_to_all_communities_p: Распространяется на вложенные?
+        apply_show_parent_communities_in_keywords_to_all_communities_p: Распространяется на вложенные?
+        apply_show_child_communities_in_keywords_to_all_communities_p: Распространяется на вложенные?
+        apply_noindex_to_all_communities_p: Распространяется на вложенные?
+        apply_nofollow_to_all_communities_p: Распространяется на вложенные?
+        hide_themes_amount_in_list: Скрыть количество тем при выводе списка сообществ?
+        hide_comments_amount_in_list: Скрыть количество комментариев при выводе списка сообществ?
+        hide_users_amount_in_list: Скрыть количество участников при выводе списка сообществ?
+        apply_hide_themes_amount_in_list_to_all_communities: Распространяется на вложенные?
+        apply_hide_comments_amount_in_list_to_all_communities: Распространяется на вложенные?
+        apply_hide_users_amount_in_list_to_all_communities: Распространяется на вложенные?
+        hot_themes_age: Максимальный возраст горячих тем, дней
+        hot_themes_on_sites_age: Максимальный возраст горячих тем для показа на сайтах, дней
+        last_themes_on_sites_amount: Количество новых тем для показа на сайтах
+        hide_community_image_on_sites: Скрыть иконку сообщества на сайтах?
+        hide_community_image_on_tags_pages_on_sites: Скрыть иконку сообщества на страницах с тэгами/метками на сайтах?
+        hide_users_short_info_on_sites: Не выводить краткую информацию о пользователе при наведении мышью на аватар пользователя?
+        users_last_themes_replied_amount_on_sites: Количество последних отвеченных тем для вывода в краткой информации о пользователе
+        members_on_tags_pages_on_sites_amount: Показывать на страницах с тэгами/метками на сайтах
+        members_on_sites_amount: Показывать на тематических страницах на сайтах
+        hot_themes_on_tags_pages_on_sites_age: Максимальный возраст горячих тем для показа на страницах с тэгами/метками на сайтах, дней
+        hot_themes_on_categories_pages_on_sites_age: Максимальный возраст горячих тем для показа на страницах разделов/категорий на сайтах, дней
+        split: ""
+        communities_site_urls: Cвязанные разделы и категории на сайтах
+        site_urls: Cвязанные разделы и категории на сайтах
+        sponsor_for_childrens: Применить к дочерним сообществам
+        sponsor_id: Спонсор сообщества
+        new_articles_module_setting_id: Настройки модуля "Новые статьи"
+        meta_description: Описание
+        keywords: Ключевые слова
+        hide_division_name_in_title: Скрыть слово 'Сообщества' в заголовке html-страницы?
+        apply_hide_division_name_in_title_to_all_communities: Распространяется на вложенные?
+        hide_division_name_in_title_p: Скрыть слово 'Сообщества' в заголовке html-страницы в версиях для печати?
+        apply_hide_division_name_in_title_to_all_communities_p: Распространяется на вложенные?
+        image: Иконка
+        default_community: Использовать как шаблон
+        community_type: Тип сообщества
+        hide_description: Скрыть описание?
+        image_title: Title иконки
+        hide_icon: Скрыть иконку?
+        sponsor: Спонсор
+        main_parent_id: Ведущий родитель
+        hide_descendants: Скрыть?
+        hide_members_amount: Скрыть количество?
+        hide_moderators: Скрыть?
+        hide_titles_and_announcements: Скрыть анонсы и заголовки сообществ?
+        hide_last_messages: Скрыть последние сообщения?
+        hide_rss: Скрыть ссылки на RSS?
+        id1: Id
+        notes_noindex: Скрыть заметки (кроме анонсов) в сообществе от индексирования роботами?
+        apply_notes_noindex_to_all_communities: Распространяется на вложенные?
+        notes_nofollow: Скрыть от роботов ссылки на страницах заметок (кроме анонсов) в сообществе?
+        apply_notes_nofollow_to_all_communities: Распространяется на вложенные?
+        notes_noindex_p: Скрыть заметки (кроме анонсов) в сообществе от индексирования роботами в версиях для печати?
+        apply_notes_noindex_to_all_communities_p: Распространяется на вложенные?
+        notes_nofollow_p: Скрыть от роботов ссылки на страницах заметок (кроме анонсов) в сообществе в версиях для печати?
+        apply_notes_nofollow_to_all_communities_p: Распространяется на вложенные?
+        notes_print_canonical: Версия для печати заметок (кроме анонсов) является канонической страницей?
+        apply_notes_print_canonical_to_all_communities: Распространяется на вложенные?
+        announcements_noindex: Скрыть анонсы сайтов в сообществе от индексирования роботами?
+        apply_announcements_noindex_to_all_communities: Распространяется на вложенные?
+        announcements_nofollow: Скрыть от роботов ссылки на страницах анонсов сайтов в сообществе?
+        apply_announcements_nofollow_to_all_communities: Распространяется на вложенные?
+        announcements_noindex_p: Скрыть анонсы сайтов в сообществе от индексирования роботами в версиях для печати?
+        apply_announcements_noindex_to_all_communities_p: Распространяется на вложенные?
+        announcements_nofollow_p: Скрыть от роботов ссылки на страницах анонсов сайтов в сообществе в версиях для печати?
+        apply_announcements_nofollow_to_all_communities_p: Распространяется на вложенные?
+        announcements_print_canonical: Версия для печати анонсов сайтов является канонической страницей?
+        apply_announcements_print_canonical_to_all_communities: Распространяется на вложенные?
+        apply_hide_link_to_print_version_to_all: Распространяется на вложенные?
+        apply_hide_link_to_print_version_in_new_themes_to_all: Распространяется на вложенные?
+        apply_hide_description_to_all: Распространяется на вложенные?
+        apply_hide_last_messages_to_all: Распространяется на вложенные?
+        apply_hide_rss_to_all: Распространяется на вложенные?
+        apply_hide_icon_to_all: Распространяется на вложенные?
+        apply_sponsor_to_all: Распространяется на вложенные?
+        apply_show_on_main_page_for_registered_users_to_all: Распространяется на вложенные?
+        apply_show_on_main_page_for_guests_to_all: Распространяется на вложенные?
+        apply_show_on_communities_main_page_to_all: Распространяется на вложенные?
+        apply_hide_descendants_to_all: Распространяется на вложенные?
+        apply_expand_tree_to_all: Распространяется на вложенные?
+        apply_expand_level_to_all: Распространяется на вложенные?
+        apply_render_members_amount_to_all: Распространяется на вложенные?
+        apply_community_members_order_to_all: Распространяется на вложенные?
+        apply_members_on_sites_amount_to_all: Распространяется на вложенные?
+        apply_members_on_tags_pages_on_sites_amount_to_all: Распространяется на вложенные?
+        apply_community_members_order_on_sites_to_all: Распространяется на вложенные?
+        apply_hide_community_members_avatars_on_sites_to_all: Распространяется на вложенные?
+        apply_hide_moderators_to_all: Распространяется на вложенные?
+        apply_hide_themes_amount_to_all: Распространяется на вложенные?
+        apply_hide_themes_amount_on_user_page_to_all: Распространяется на вложенные?
+        apply_hot_themes_age_to_all: Распространяется на вложенные?
+        apply_hot_themes_on_sites_age_to_all: Распространяется на вложенные?
+        apply_hot_themes_on_tags_pages_on_sites_age_to_all: Распространяется на вложенные?
+        apply_hot_themes_on_categories_pages_on_sites_age_to_all: Распространяется на вложенные?
+        apply_last_themes_on_sites_amount_to_all: Распространяется на вложенные?
+        apply_hide_titles_and_announcements_to_all: Распространяется на вложенные?
+        apply_render_own_themes_in_common_list_to_all: Распространяется на вложенные?
+        apply_render_descendant_themes_in_common_list_to_all: Распространяется на вложенные?
+        apply_last_themes_amount_to_all: Распространяется на вложенные?
+        apply_disable_new_theme_in_community_to_all: Распространяется на вложенные?
+        apply_collapse_new_theme_in_community_to_all: Распространяется на вложенные?
+        apply_hide_comments_amount_to_all: Распространяется на вложенные?
+        apply_hide_comments_amount_on_user_page_to_all: Распространяется на вложенные?
+        apply_hide_members_amount_to_all: Распространяется на вложенные?
+        apply_hide_community_image_on_sites_to_all: Распространяется на вложенные?
+        apply_hide_users_short_info_on_sites_to_all: Распространяется на вложенные?
+        apply_users_last_themes_replied_amount_on_sites_to_all: Распространяется на вложенные?
+        communities_roles: Могут просматривать сообщество
+        last_themes_with_quick_comment_form: Выводить темы с формой быстрого комментария на странице просмотра сообщества?
+        apply_last_themes_with_quick_comment_form_to_all: Распространяется на вложенные?
+        last_themes_with_quick_comment_form_p: Выводить темы с формой быстрого комментария на странице просмотра сообщества в версиях для печати?
+        apply_last_themes_with_quick_comment_form_to_all_p: Распространяется на вложенные?
+        show_tags_in_last_themes: Показывать метки в новых темах на странице раздела/сообщества?
+        apply_show_tags_in_last_themes_to_all_communities: Распространяется на вложенные?
+        show_tags_in_last_themes_p: Показывать метки в новых темах на странице раздела/сообщества в версиях для печати?
+        apply_show_tags_in_last_themes_to_all_communities_p: Распространяется на вложенные?
+        album_switch_expand_level: Выводить уровней в меню быстрого перехода к альбому
+        apply_album_switch_expand_level_to_all: Распространяется на вложенные?
+        albums_in_redactor_expand_level: Выводить уровней фото-сообществ в редакторе заметок
+        apply_albums_in_redactor_expand_level_to_all: Распространяется на вложенные?
+        hide_photo_descendants: Скрыть фото-сообщества?
+        apply_hide_photo_descendants_to_all: Распространяется на вложенные?
+        force_show_in_descendants: Показывать во всех верхних к родителю сообществах?
+        apply_force_show_in_descendants_to_all: Распространяется на вложенные?
+        force_show_in_children: Показывать во вложенных сообществах родителя?
+        apply_force_show_in_children_to_all: Распространяется на вложенные?
+        render_descendant_photo_themes_in_common_list: Выводить темы вложенных фото-сообществ в общей ленте?
+        apply_render_descendant_photo_themes_in_common_list_to_all: Распространяется на вложенные?
+        middle_photo_size_in_notes_lists: Использовать средний размер фото в списках тем?
+        apply_middle_photo_size_in_notes_lists_to_all: Распространяется на вложенные?
+      default_community:
+        description: Описание
+        image: Иконка
+      community_type:
+        name: Тип
+      community_members_order:
+        name: Порядок
+      themes_order:
+        name: Порядок
+      themes_setting:
+        name: Вид темы
+        age: Возраст темы, дней
+        replies_amount: Количество ответов
+        last_reply_age: Возраст последнего ответа, дней
+        created_by_user: Создана пользователем
+        created_by_script: Создана скриптом
+        collapse_themes: Выводить в свёрнутом виде?
+        feed_amount: Количество тем на странице
+        hide_page_numbers: Скрыть номера страниц?
+        render_in_common_list: Выводить в общей ленте?
+      external_link:
+        name: Название
+        url: Ссылка на админку
+        article_title_css: CSS-путь для заголовка статьи
+        article_body_css: CSS-путь для текста статьи
+        article_created_at_css: CSS-путь для времени публикации статьи
+        category_title_css: CSS-путь для названия раздела или категории
+        visible: Активный
+        url_mirror: Зеркало
+        link: Перейти
+        url_mirrors: Зеркала сайтов
+      notes_site_url:
+        title: Заголовок
+        url: Ссылка
+        disable_comments_on_sites: Отключить?
+      communities_site_url:
+        title: Заголовок
+        url: Ссылка
+        admin_selected: Выделенная
+        show_on_all_pages_of_sites_category: Во вложенных категориях?
+        show_on_all_pages_of_site: На всём сайте?
+      authentication:
+        user: Пользователь
+      city:
+        title: Название
+        region: Регион
+        country: Страна
+        cities: Города
+      region:
+        title: Название
+        country: Страна
+      country:
+        title: Название
+        regions: Регионы
+      education:
+        name: Название
+        users: Пользователи
+      community_member:
+        communities: Сообщества
+        member_notes_amount: Количество сообщений
+      marital_status:
+        name: Название
+        users: Пользователи
+      url_mirrors:
+        url: Ссылка
+      theme:
+        body: Текст заметки
+      sponsor:
+        name: Имя
+        communitiy_id: Сообщества
+        link: Ссылка
+        created_at: Создано
+        updated_at: Обновлено
+        image: Иконка
+        show_for_registered_user: Показывать зарегистрированным пользователям?
+        show_for_guest: Показывать незарегистрированным пользователям?
+        communities: Сообщества
+        height: Высота(по умолчанию 24)
+        width: Ширина(по умолчанию 100)
+        image_alt:  Alt иконки
+        image_title: Title иконки
+        secondary_image: Дополнительная иконка(для приложение вконтакте(73x18))
+      site_part:
+        name:  Имя
+        title: Название
+        site_part_settings: Настройки модуля
+        available_hours: Время доступности
+        available_urls: Доступные url
+        site_part_settings1: Настройки модуля
+        image:  Иконка
+        our_sites: Сайты
+        available_urlsable: Модуль
+        available_hoursable: Модуль
+        available_days: Доступные дни
+        new_articles: Список статей (если указана опция "Задать порядок")
+      site_part_setting:
+        title: Название
+        value: Значение
+        value_type: Тип настройки
+        site_part: Модуль
+        key: Ключ
+      available_hour:
+        day: День недели
+        start_at: С
+        end_at: По
+        site_part: Модуль
+        new_articles_module_setting: Или сообщество для модуля "Новые статьи"
+      available_url:
+        ids: Значения
+        type_of_url: Тип
+        site_part: Модуль
+        new_articles_module_setting: Или сообщество для модуля "Новые статьи"
+      new_articles_module_setting:
+        community: Сообщество
+        title: Название
+        button_title: Кнопка
+        image: Иконка
+        display_tags: Показывать сообщества, к которым принадлежит анонс?
+        community: Сообщество
+        time_interval: За
+        sort_by: Сортировать по
+        from_communities: Из сообществ
+        sort_by_admin: Задать порядок?
+        note_urls: Порядок статей
+        number_of_articles: Количество статей в модуле
+        articles_type: Тип статьи
+        show_on_all_pages: Показывать на всех страницах
+        show_on_main_page: Показывать на главной
+        show_for_guests: Показывать для гостей
+        show_for_registered_users: Показывать для зарегистрированных пользователей
+        available_urls: Доступные urls
+        available_hours: Доступность по времени
+        available_urlsable: Сообщество
+        available_hoursable: Сообщество
+        available_days: Доступные дни
+        apply_for_parents: Применить к дочерним сообществам?
+        new_articles: Список статей
+        from_external_links: С сайтов
+        number_of_tags: Кол-во выводимых сообществ
+        set_default: ""
+      our_site:
+        url: Адрес
+        name: Имя
+        site_part: Модуль
+      new_article:
+        title: Заголовок
+        url: Адрес
+        body: Текст
+      setting_category:
+        name: Группа
+      photo_album:
+        name: Название
+        privacy_id: Видимость
+      notes_filter:
+        ip: IP-адрес
+      feedback:
+        guest_name: Ваше имя
+        name: Пользователь
+        role: Получатель
+        role_name: Получатель
+        subject: Тема
+        body: Сообщение
+        created_at: Отправлено
+        guest_email: Ваш email
+      message:
+        title: Заголовок
+        body: Текст сообщения
+        recipient_id: Получатель
+      friendship_category:
+        name: "Название:"
+      friendship:
+        category_id: "Добавить в категорию:"
+      static:
+        name: Название
+        human_name: Название
+        body: Содержимое страницы
+        formatted_body: Содержимое страницы
+      company:
+        user_id: Владелец
+        name: Название
+        logo: Логотип
+        address: Адрес
+        url: Адрес сайта
+        phone: Телефон
+        info: Информация о компании
+        created_date: Дата создания
+        email: Электронная почта
+        fb_page: Фейсбук
+        twitter_page: Твиттер
+        vk_page: Вконтакте
+        owner: Владелец
+        admined_users_companies: Администраторы
+        deleted: Удалена?
+        holded: Заблокирована?
+        short_info: Кол-во подписчиков/материалов
+        notes_count: Кол-во материалов
+        subscribers_count: Кол-во подписчиков
+        show_email: Почта видна пользователям?
+        updated_at: Дата редактирования
+        noindex: Скрыть от индексирования роботами?
+        nofollow: Скрыть от роботов ссылки?
+        print_canonical: Версия для печати является канонической страницей?
+      users_company:
+        admined_user: Пользователь
+      public_file:
+        user_id: Загрузил
+        user_name_or_email: Загрузил
+        file: Имя файла
+        name: Имя файла
+        created_at: Загружен
+        updated_at: Обновлён
+      note_icon:
+        image: Иконка анонса
+      communities_role:
+        community_id: Сообщество
+        role_id: Роль
+        apply_to_all: Распространяется на вложенные?
+        allow: Разрешить
+      posting_type:
+        name: Тип
+      censored_word:
+        words: Слова
+

@@ -1,0 +1,32 @@
+<h2>Покупатели ({{totalCount}})</h2>
+
+<div class="row mb-10">
+  <div class="col-xs-12 text-right">
+    <a href="#/customers/new" class="btn btn-default">Новый</a>
+  </div>
+</div>
+
+<table class="table table-strip table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Ник</th>
+      <th>ФИО</th>
+      <th>Создан</th>
+      <th>Обновлен</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#customer of customers">
+      <td>{{customer.id}}</td>
+      <td>{{customer.nick}}</td>
+      <td>{{customer.name}}</td>
+      <td>{{customer.createdAt}}</td>
+      <td>{{customer.updatedAt}}</td>
+      <td><a href="#/customers/{{customer.id}}">Редактировать</a></td>
+      <td><button (click)="deleteCustomer(customer)">Удалить</button></td>
+    </tr>
+  </tbody>
+</table>
